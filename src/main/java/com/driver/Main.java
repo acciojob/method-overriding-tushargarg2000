@@ -25,8 +25,12 @@ public class Main {
         B b = new B();
         b.meth();
 
+
+
+        //B b = new A(); --> child cant hold the parent obje
+
         B b1 = new B();
-        b1.meth();
+        b1.meth(); //Child function
 
     }
 }
