@@ -13,7 +13,7 @@ public class Main {
 
 
         @Override
-        String meth(){
+        public String meth(){
             return "Method is overridden in Extendend class B";
         }
 
