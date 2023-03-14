@@ -9,28 +9,26 @@ public class Main {
         }
     }
 
-    public static class B extends A{
-
-
-        @Override
+    public static class B extends A {
         public String meth(){
             return "Method is overridden in Extendend class B";
         }
-
     }
 
     public static void main(String[] args) {
 
+        B obj = new B();
 
-        B b = new B();
-        b.meth();
+        obj.meth();
 
 
+        B obj1 = new B();
 
-        //B b = new A(); --> child cant hold the parent obje
+        obj1.meth();
 
-        B b1 = new B();
-        b1.meth(); //Child function
+
+        //Automatically call the function of class A meth
+
 
     }
 }
