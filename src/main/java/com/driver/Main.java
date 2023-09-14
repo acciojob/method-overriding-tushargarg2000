@@ -10,9 +10,11 @@ public class Main {
     }
 
     public static class B extends A {
+
         public String meth(){
-            return "Methodsdfsfasdfasdfn in Extendend class B";
+            return "Method is overridden in Extendend class B";
         }
+
     }
 
     public static void main(String[] args) {
@@ -20,8 +22,9 @@ public class Main {
         B obj = new B();
         obj.meth();
 
+
         B obj1 = new B();
         obj1.meth();
-        //Automatically call the function of class A meth
+
     }
 }
